@@ -20,7 +20,7 @@ jobs:
         run: go build -o output/binary_name ./path_to_main_package
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: compiled-files
           path: output/
